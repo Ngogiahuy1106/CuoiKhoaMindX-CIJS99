@@ -1,0 +1,60 @@
+.LogoListContainer{
+    height: 360px;
+    display: flex;
+    justify-content: center;
+}
+.LogoList{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoListItem1{
+    background-image: url(./Public/TeslaLogo.png);
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LogoListItem2{
+    background-image: url(./Public/AudiLogo.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LogoListItem3{
+    background-image: url(./Public/FiatLoga.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LogoListItem4{
+    background-image: url(./Public/HyundaiLogo.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LogoListItem5{
+    background-image: url(./Public/PeugeotLogo.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LogoListItem6{
+    background-image: url(./Public/Volvo.png);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,68 @@
+.AboutUsContainer{
+    background: rgba(18, 35, 46, 1);
+
+}
+.WidthCustomOnly {
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    width: 90%;
+    justify-content: space-between;
+}
+.AboutUsImageContainer
+{
+width: 750px;
+height: 610px;
+background-image: url(./Public/AboutUs.jpeg);
+background-size: cover;
+background-position: center;}
+
+
+.AboutUsBox
+{
+width: 160px;
+height: 160px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+
+}
+.AboutUsBoxNumber{
+    font-size: 50px;
+    font-weight: bold;
+}
+.AboutUsBoxText
+{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.AboutUsBoxContainer
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-between
+
+}
+.AboutUsUl1
+{list-style: none;
+width: 35%;
+}
+.AboutUsUl2
+{list-style: none;
+    margin-top: 150px;
+}
+.AboutUsText
+{
+    font-size: 22px ;
+    margin-bottom: 100px;
+}
+.AboutUsH1
+{
+    font-size: 50px;
+}
+
+.DoubleBarrier{
+    border: 3px rgba(0, 74, 119, 1) solid;
+    width: 160px;
+}

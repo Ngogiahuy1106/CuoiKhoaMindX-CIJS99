@@ -1,0 +1,67 @@
+.ContactContainer
+{
+width: 100%;
+height: 900px;
+background-image: url(./Public/ContactBg.jpeg);
+background-size: cover;
+background-position: center;
+display: flex;
+
+align-items: center;
+}
+.ContactBox{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.map-container {
+    width: 700px;
+    max-width: 700px;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+}
+.ContactSendBtn
+{
+    background-color: rgba(0, 124, 199, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 15px 15px;
+    width: 530px;
+}
+.ContactInput{
+    width: 500px;
+    background: rgba(21, 40, 54, 1);
+    color: rgba(169, 169, 169, 1);
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+    
+}
+.ContactForm{
+    font-size: 25px;
+    height: 650px;
+}
+.ContactText
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.ContactComment{
+height: 180px;
+width: 500px;
+background: rgba(21, 40, 54, 1);
+color: rgba(169, 169, 169, 1);
+font-size: 20px;
+border: none;
+padding: 15px;
+}

@@ -1,0 +1,34 @@
+.OurServiceContainer
+{
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.OurServiceBoxContainer
+{
+    margin: 0 auto;
+    width: 70%;
+    
+}
+.OurServiceBox{
+    border: 2px solid rgba(0, 124, 199, 1);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+}
+.OurService3box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.OurServiceText
+{
+    font-size: 30px;
+}
+.OurServiceBoxText
+{
+    font-size: 30px;
+}

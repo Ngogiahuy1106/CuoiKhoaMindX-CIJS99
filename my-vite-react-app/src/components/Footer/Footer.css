@@ -1,0 +1,44 @@
+.Footer{
+background: rgba(18, 35, 46, 1);
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+padding-top: 30px; 
+
+}
+.FooterLogo{
+    height: 60px;
+}
+.ThreeColum
+{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+.Copyright
+{
+    margin: 20px 0px;
+}
+.FooterUl{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+}
+
+.horizontal-line {
+    height: 1px;
+    background: white;
+    margin: 20px 0;
+    width: 80%;
+
+}
+
+.PaddingOnly{
+    margin: 15px 0px; 
+}

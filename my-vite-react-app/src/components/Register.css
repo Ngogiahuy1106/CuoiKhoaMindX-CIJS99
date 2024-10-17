@@ -1,0 +1,51 @@
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 93px;
+}
+
+ .display {
+    flex-direction: column;
+    align-items: baseline;
+ }
+
+ .name {
+    width: 504px;
+    height: 48px;
+    margin: 10px 0px;
+    padding-left: 15px; 
+ }
+
+ .email {
+    width: 504px;
+    height: 48px;
+    margin: 10px 0px;
+    padding-left: 15px;
+ }
+
+ .number {
+    width: 504px;
+    height: 48px;
+    margin: 10px 0px;
+    padding-left: 15px;
+ }
+
+ .password {
+    width:  504px;
+    height: 48px;
+    margin: 10px 0px;
+    padding-left: 15px;
+ }
+
+ .button_logIn {
+    margin: 30px 0px;
+    width: 525px;
+    height: 48px;
+    background-color: #007cc7;
+    color: white;
+ }
+
+ .image {
+    width: 472px;
+    height: 451px;
+ }

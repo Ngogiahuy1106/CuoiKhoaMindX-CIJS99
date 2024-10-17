@@ -1,0 +1,77 @@
+.TitleContainer{
+    background: rgba(18, 35, 46, 1);
+    height: 300px;
+}
+.TitleTextContainer
+{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.Title
+{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.SubTitle
+{
+    font-size: 28px;
+}
+.CarSellContainer
+{
+    height: max-content;
+    padding-top: 150px;
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    margin: 0 auto
+}
+.FilterContainer{
+    background: #071620;
+    width: 32%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FilterBox
+{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    
+}
+.FilterChildBox
+{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    
+}
+.FilterSearchInput{
+    width: 90%;
+    margin: 0 auto;
+    background: #152836;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.FilterBarrier{
+    border: solid 1px white;
+    width: 94%;
+    margin: 10px auto;
+
+}
+.Custom3{
+    display: flex;
+    flex-direction: column;
+}
+
+.FilterDropDown
+{
+    border-bottom: white solid 1px;
+}

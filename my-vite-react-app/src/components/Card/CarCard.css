@@ -1,0 +1,97 @@
+.CarCardContainer {
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(18, 35, 46, 1);
+    background: rgba(11, 12, 16, 1);
+    margin: 30px 0px;
+    text-decoration: none; 
+    color: inherit; 
+}   
+
+.CarCardContainer:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.CarCardInfo {
+    width: 53%;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CarCardImage {
+    width: 360px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.CarCardState {
+    border: 1px solid rgba(0, 124, 199, 1);
+    font-size: 18px;
+    color: rgba(0, 124, 199, 1);
+    padding: 4px 14px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.CarCardName {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin: 12px 0px;   
+}
+
+.CarCardPrice {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(0, 124, 199, 1);
+}
+
+.CarCardAdress {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin: 12px 0px;
+}
+
+.CarCard4Info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CarCard4InfoText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.CarCard4InfoTextBarrier {
+    border: solid white 1px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.CarCardSearch {
+    width: 800px;
+    padding: 20px;
+    background: #152836;
+    color: white;
+    border: none;
+}
+
+.CarSearchNumberResult {
+    color: #D7D7D7;
+    font-size: 30px;
+    font-weight: bold;
+}

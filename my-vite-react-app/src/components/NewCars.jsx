@@ -1,0 +1,334 @@
+import React from 'react';
+import CarList from './Card/CarList';
+import './NewCars.css';
+
+const carData = [
+    {
+      Name: 'Tesla Model 3 Standard Range Plus',
+      Price: '$56,690',
+      FirstPrice: '',
+      City: 'Florida',
+      Country: 'USA',
+      Image: 'Tesla Model 3.png',
+      Type: 'Electric',
+      Year: '2020', 
+      Seat: '5',
+      State: 'New',
+      DriveType: 'Rear-wheel Drive',
+      ExteriorColor: 'Red',
+      Brand: 'Tesla',
+      Model: 'Model 3',
+      BodyType: 'Sedan',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '283 hp',
+      BatteryCapacity: '50 kWh',
+      ChargeSpeed: '150 kW',
+      ChargePort: 'Type 2',
+      ChargeTime: '30 mins',
+      Dimensions: {
+          Length: '184.8 in',
+          Width: '72.8 in',
+          Height: '56.8 in',
+          CargoVolume: '15 cu ft'
+      }
+    },
+    {
+      Name: 'Ford F-250 Super Duty',
+      Price: '$82,098',
+      FirstPrice: '$83,500',
+      City: 'Milan',
+      Country: 'Italy',
+      Image: 'Ford F-250.png',
+      Type: 'Diesel',
+      Year: '2021', 
+      Seat: '5',
+      State: 'New',
+      DriveType: 'Four-wheel Drive',
+      ExteriorColor: 'Blue',
+      Brand: 'Ford',
+      Model: 'F-250',
+      BodyType: 'Truck',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '475 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '250.2 in',
+          Width: '79.9 in',
+          Height: '81.5 in',
+          CargoVolume: 'N/A'
+      }
+    },
+    {
+      Name: 'Honda Pilot Touring 7-Passenger',
+      Price: '$43,735',
+      FirstPrice: '',
+      City: 'Caracas',
+      Country: 'Venezuela',
+      Image: 'Honda Pilot Touring.png',
+      Type: 'Gasoline',
+      Year: '2021', 
+      Seat: '7',
+      State: 'New',
+      DriveType: 'All-wheel Drive',
+      ExteriorColor: 'Black',
+      Brand: 'Honda',
+      Model: 'Pilot',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '280 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '196.5 in',
+          Width: '78.6 in',
+          Height: '69.8 in',
+          CargoVolume: '16.5 cu ft'
+      }
+    },
+    {
+      Name: 'Chevrolet Equinox LS',
+      Price: '$17,978',
+      FirstPrice: '',
+      City: 'Madrid',
+      Country: 'Spain',
+      Image: 'Chevrolet Equinox LS.png',
+      Type: 'Gasoline',
+      Year: '2017', 
+      Seat: '5',
+      State: 'New',
+      DriveType: 'Front-wheel Drive',
+      ExteriorColor: 'Silver',
+      Brand: 'Chevrolet',
+      Model: 'Equinox',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '170 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '183.1 in',
+          Width: '72.5 in',
+          Height: '65.4 in',
+          CargoVolume: '29.9 cu ft'
+      }
+    },
+    {
+      Name: 'Kia Sorento S',
+      Price: '$29,791',
+      FirstPrice: '',
+      City: 'Bangkok',
+      Country: 'Thailand',
+      Image: 'Kia Sorento S.png',
+      Type: 'Gasoline',
+      Year: '2021', 
+      Seat: '7',
+      State: 'New',
+      DriveType: 'Front-wheel Drive',
+      ExteriorColor: 'White',
+      Brand: 'Kia',
+      Model: 'Sorento',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '191 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '189 in',
+          Width: '74 in',
+          Height: '66.7 in',
+          CargoVolume: '12.6 cu ft'
+      }
+    },
+    {
+      Name: 'MINI Clubman Cooper S',
+      Price: '$35,850',
+      FirstPrice: '',
+      City: 'Jakarta',
+      Country: 'Indonesia',
+      Image: 'MINI Clubman Cooper S.png',
+      Type: 'Gasoline',
+      Year: '2022', 
+      Seat: '5',
+      State: 'New',
+      DriveType: 'Front-wheel Drive',
+      ExteriorColor: 'Green',
+      Brand: 'MINI',
+      Model: 'Clubman',
+      BodyType: 'Hatchback',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '189 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '168.3 in',
+          Width: '71.7 in',
+          Height: '56.7 in',
+          CargoVolume: '17.5 cu ft'
+      }
+    },
+    {
+      Name: 'Jeep Wrangler Unlimited Islander',
+      Price: '$50,370',
+      FirstPrice: '',
+      City: 'San Antonio',
+      Country: 'USA',
+      Image: 'Jeep Wrangler Unlimited Islander.png',
+      Type: 'Hybrid',
+      Year: '2021', 
+      Seat: '5',
+      State: 'Used',
+      DriveType: 'Four-wheel Drive',
+      ExteriorColor: 'Orange',
+      Brand: 'Jeep',
+      Model: 'Wrangler',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '270 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '189.8 in',
+          Width: '73.7 in',
+          Height: '73.6 in',
+          CargoVolume: '31.7 cu ft'
+      }
+    },
+    {
+      Name: 'Audi e-tron Premium',
+      Price: '$72,655',
+      FirstPrice: '',
+      City: 'Suwon',
+      Country: 'South Korea',
+      Image: 'Audi e-tron Premium.png',
+      Type: 'Electric',
+      Year: '2021', 
+      Seat: '5',
+      State: 'Used',
+      DriveType: 'All-wheel Drive',
+      ExteriorColor: 'Gray',
+      Brand: 'Audi',
+      Model: 'e-tron',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '355 hp',
+      BatteryCapacity: '95 kWh',
+      ChargeSpeed: '150 kW',
+      ChargePort: 'Type 2',
+      ChargeTime: '30 mins',
+      Dimensions: {
+          Length: '193.8 in',
+          Width: '76.3 in',
+          Height: '64.0 in',
+          CargoVolume: '28.5 cu ft'
+      }
+    },
+    {
+      Name: 'Land Rover Range Rover Velar R-Dynamic S',
+      Price: '$75,790',
+      FirstPrice: '',
+      City: 'Jeddah',
+      Country: 'Saudi Arabia',
+      Image: 'Land Rover Range Rover Velar R-Dynamic S.png',
+      Type: 'Gasoline',
+      Year: '2021', 
+      Seat: '5',
+      State: 'Used',
+      DriveType: 'All-wheel Drive',
+      ExteriorColor: 'Black',
+      Brand: 'Land Rover',
+      Model: 'Range Rover Velar',
+      BodyType: 'SUV',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '247 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'N/A',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '192.1 in',
+          Width: '75.2 in',
+          Height: '64.0 in',
+          CargoVolume: '34.4 cu ft'
+      }
+    },
+    {
+        Name: 'Toyota Mirai',
+        Price: '$71,415',
+        FirstPrice: '',
+        City: 'Kobe',
+        Country: 'Japan',
+        Image: 'Toyota Mirai.png',
+        Type: 'Electric',
+        Year: '2021', 
+        Seat: '5',
+        State: 'Used',
+        DriveType: 'Rear-wheel Drive',
+        ExteriorColor: 'Blue',
+        Brand: 'Toyota',
+        Model: 'Mirai',
+        BodyType: 'Sedan',
+        Mileage: 'N/A',
+        Transmission: 'Automatic',
+        Power: '182 hp',
+        BatteryCapacity: 'N/A',
+        ChargeSpeed: 'N/A',
+        ChargePort: 'Hydrogen',
+        ChargeTime: 'N/A',
+        Dimensions: {
+            Length: '192.5 in',
+            Width: '73.2 in',
+            Height: '58.1 in',
+            CargoVolume: '11.0 cu ft'
+        }
+      }
+  ];
+  
+  function NewCars() {
+    return (
+        <>
+            <div className='TitleContainer'>
+                <div className='TitleTextContainer'>
+                    <div className='Title'>New Cars</div>
+                    <div className='SubTitle'>Homepage - New Cars</div>
+                </div>
+            </div>
+            <div className='CarSellContainer'>
+                <div className='FilterContainer'>
+                    <div className='FilterChildBox'>Filter</div>
+                    <div className='FilterBarrier'></div>
+                    <div className='Custom3'>
+                        <div className='FilterChildBox'>Year</div>
+                        <div className='FilterChildBox'>Brand</div>
+                        <div className='FilterChildBox'>Model</div>
+                        <div className='FilterChildBox'></div>
+                    </div>
+                </div>
+                <div><CarList carData={carData} /></div>
+            </div>
+        </>
+    );
+}
+
+export default NewCars;
