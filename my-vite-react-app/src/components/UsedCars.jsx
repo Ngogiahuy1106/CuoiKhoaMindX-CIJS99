@@ -3,6 +3,8 @@ import Title from './Title';
 import CarList from './Card/CarList';
 import './NewCars.css';
 function UsedCars({ carData }) {
+    const usedCars = carData.filter(car => car.State === 'Used');
+
     return (
         <>
             <Title title="Used Cars" subtitle="Homepage - Used Cars" />
@@ -17,7 +19,7 @@ function UsedCars({ carData }) {
                         <div className='FilterChildBox'></div>
                     </div>
                 </div>
-                <div><CarList carData={carData} /></div>
+                <div><CarList carData={usedCars} /></div>
             </div>
         </>
     );

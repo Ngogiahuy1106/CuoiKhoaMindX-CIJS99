@@ -1,0 +1,19 @@
+.container {
+    background-color: #071620;
+    margin: 0 auto;
+    width: 1100px;
+}
+ .table {
+    width: 1100px;
+    margin: 20px 73px;
+ }
+
+ .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+ }
+
+ .Vehicle_History {
+    padding: 20px auto;
+ }

@@ -1,5 +1,6 @@
-import React from 'react'
-import './SignIn.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './SignIn.css';
 
 const Signin = () => {
   return (
@@ -14,11 +15,13 @@ const Signin = () => {
         <input type="password" placeholder="password" className='password'/>
         <br />
         <button className='button_logIn'>Log in</button>
-        <p>Don't have an account? Login here</p>
+        <p>
+          Don't have an account? <Link to="/register">Register here</Link>
+        </p>
       </form>
       <img src="/Frame 290.png" alt="" className='image '/>
     </div>
   );
 };
 
-export default Signin
+export default Signin;

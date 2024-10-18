@@ -17,7 +17,6 @@ const Navbar = () => {
                 <li><Link to="/compare">Compare</Link></li>
                 <li><Link to="/sell">Sell</Link></li>
                 <li><Link to="/article">Article</Link></li>
-                <li><Link to="/register">Register</Link></li> {/* Add Register link */}
             </ul>
             <ul className='NavbarUl3'>
                 <li><Link to="/signin">Signin</Link></li>
