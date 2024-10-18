@@ -1,5 +1,6 @@
 import React from 'react';
 import './CarCard.css';
+
 const SearchBar = ({ searchTerm, onSearchChange }) => {
     return (
         <input

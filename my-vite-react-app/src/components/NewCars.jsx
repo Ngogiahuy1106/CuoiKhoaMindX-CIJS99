@@ -1,6 +1,9 @@
 import React from 'react';
+import Title from './Title';
 import CarList from './Card/CarList';
 import './NewCars.css';
+
+const description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam nam eu nulla a. Vestibulum aliquet facilisi interdum nibh blandit. Leo amet ultricies cum cras sit sed curabitur ultrices faucibus. Ultrices pellentesque ultricies semper leo maecenas. Amet, et sagittis consectetur at euismod iaculis. Id non velit auctor praesent a amet risus facilisis. Lobortis nisl placerat orci, eu nisl ornare. Eu vitae pellentesque rhoncus eros vivamus est purus enim dui. Leo ac pharetra massa tristique. Libero aliquam pellentesque laoreet dui pulvinar facilisis. Id lectus mauris senectus sodales porta malesuada tincidunt et. Quam dui nulla venenatis suscipit nulla lectus volutpat, augue purus. Sed condimentum parturient maecenas viverra pulvinar leo augue nunc.';
 
 const carData = [
     {
@@ -31,7 +34,8 @@ const carData = [
           Width: '72.8 in',
           Height: '56.8 in',
           CargoVolume: '15 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Ford F-250 Super Duty',
@@ -61,7 +65,8 @@ const carData = [
           Width: '79.9 in',
           Height: '81.5 in',
           CargoVolume: 'N/A'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Honda Pilot Touring 7-Passenger',
@@ -91,7 +96,8 @@ const carData = [
           Width: '78.6 in',
           Height: '69.8 in',
           CargoVolume: '16.5 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Chevrolet Equinox LS',
@@ -121,7 +127,8 @@ const carData = [
           Width: '72.5 in',
           Height: '65.4 in',
           CargoVolume: '29.9 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Kia Sorento S',
@@ -151,7 +158,8 @@ const carData = [
           Width: '74 in',
           Height: '66.7 in',
           CargoVolume: '12.6 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'MINI Clubman Cooper S',
@@ -181,7 +189,8 @@ const carData = [
           Width: '71.7 in',
           Height: '56.7 in',
           CargoVolume: '17.5 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Jeep Wrangler Unlimited Islander',
@@ -211,7 +220,8 @@ const carData = [
           Width: '73.7 in',
           Height: '73.6 in',
           CargoVolume: '31.7 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Audi e-tron Premium',
@@ -241,7 +251,8 @@ const carData = [
           Width: '76.3 in',
           Height: '64.0 in',
           CargoVolume: '28.5 cu ft'
-      }
+      },
+      Description: description
     },
     {
       Name: 'Land Rover Range Rover Velar R-Dynamic S',
@@ -271,49 +282,47 @@ const carData = [
           Width: '75.2 in',
           Height: '64.0 in',
           CargoVolume: '34.4 cu ft'
-      }
+      },
+      Description: description
     },
     {
-        Name: 'Toyota Mirai',
-        Price: '$71,415',
-        FirstPrice: '',
-        City: 'Kobe',
-        Country: 'Japan',
-        Image: 'Toyota Mirai.png',
-        Type: 'Electric',
-        Year: '2021', 
-        Seat: '5',
-        State: 'Used',
-        DriveType: 'Rear-wheel Drive',
-        ExteriorColor: 'Blue',
-        Brand: 'Toyota',
-        Model: 'Mirai',
-        BodyType: 'Sedan',
-        Mileage: 'N/A',
-        Transmission: 'Automatic',
-        Power: '182 hp',
-        BatteryCapacity: 'N/A',
-        ChargeSpeed: 'N/A',
-        ChargePort: 'Hydrogen',
-        ChargeTime: 'N/A',
-        Dimensions: {
-            Length: '192.5 in',
-            Width: '73.2 in',
-            Height: '58.1 in',
-            CargoVolume: '11.0 cu ft'
-        }
-      }
-  ];
+      Name: 'Toyota Mirai',
+      Price: '$71,415',
+      FirstPrice: '',
+      City: 'Kobe',
+      Country: 'Japan',
+      Image: 'Toyota Mirai.png',
+      Type: 'Electric',
+      Year: '2021', 
+      Seat: '5',
+      State: 'Used',
+      DriveType: 'Rear-wheel Drive',
+      ExteriorColor: 'Blue',
+      Brand: 'Toyota',
+      Model: 'Mirai',
+      BodyType: 'Sedan',
+      Mileage: 'N/A',
+      Transmission: 'Automatic',
+      Power: '182 hp',
+      BatteryCapacity: 'N/A',
+      ChargeSpeed: 'N/A',
+      ChargePort: 'Hydrogen',
+      ChargeTime: 'N/A',
+      Dimensions: {
+          Length: '192.5 in',
+          Width: '73.2 in',
+          Height: '58.1 in',
+          CargoVolume: '11.0 cu ft'
+      },
+      Description: description
+    }
+];
+
   
-  function NewCars() {
+  function NewCars({ carData }) {
     return (
         <>
-            <div className='TitleContainer'>
-                <div className='TitleTextContainer'>
-                    <div className='Title'>New Cars</div>
-                    <div className='SubTitle'>Homepage - New Cars</div>
-                </div>
-            </div>
+            <Title title="New Cars" subtitle="Homepage - New Cars" />
             <div className='CarSellContainer'>
                 <div className='FilterContainer'>
                     <div className='FilterChildBox'>Filter</div>
